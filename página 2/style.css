@@ -1,0 +1,159 @@
+/* Define a animação */
+@keyframes backgroundAnimation {
+    0% {
+      background-color: rgb(172, 172, 172); /* Vermelho */
+    }
+    20% {
+      background-color: rgb(139, 139, 139); /* Amarelo */
+    }
+    40% {
+      background-color: rgb(148, 148, 148); /* Verde */
+    }
+    60% {
+      background-color: rgb(77, 77, 77); /* Azul */
+    }
+    80% {
+      background-color: rgb(121, 121, 121); /* Magenta */
+    }
+    100% {
+      background-color: rgba(59, 59, 59, 0.808); /* Vermelho */
+    }
+  }
+  
+  
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    animation: backgroundAnimation 10s linear infinite;
+    font-family: Arial, sans-serif;
+ 
+}
+
+h1 {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-top: 0;
+}
+
+.container {
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative; /* Adicione esta linha */
+}
+
+.videos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse; /* Os vídeos serão empilhados um abaixo do outro na ordem inversa (o último adicionado fica em cima) */
+    align-items: center;
+    margin-top: 20px; /* Espaço entre os vídeos e o link de livros */
+}
+
+.link-livros {
+    text-align: center;
+    position: absolute;
+    bottom: 10px; /* Distância do rodapé */
+    left: 50%; /* Centralizado horizontalmente */
+    transform: translateX(-50%); /* Centralizado horizontalmente */
+}
+
+/* CSS para vídeos e botões de exclusão */
+.video {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative; /* Adicione esta linha para posicionar os botões de exclusão corretamente */
+}
+
+.video-iframe iframe {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    border: 0;
+}
+
+.excluir-btn {
+    background-color: #ff3333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    position: absolute;
+    top: 5px; /* Ajuste a posição vertical conforme necessário */
+    right: 5px; /* Ajuste a posição horizontal conforme necessário */
+}
+
+.excluir-btn:hover {
+    background-color: #e60000;
+}
+
+input[type="text"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    transform: translate(200px);
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.videos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.video-iframe iframe {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    border: 0;
+}
+
+
+#Cadastrar{
+    transform: translate(50px);
+}
